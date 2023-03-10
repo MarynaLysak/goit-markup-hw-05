@@ -54,7 +54,7 @@
       
         <div class="container hero-blok">
           <h1 class="hero-titel">Effective Solutions for Your Business</h1>
-          <button type="button" class="main-button">Order Service</button>
+          <button data-modal-open type="button" class="main-button">Order Service</button>
         </div>
      
       </section>
@@ -395,11 +395,12 @@
     </main>
      <!-- Modal-->
 
-    <div class="backdrop">
+    <div class="backdrop" data-modal>
       <div class="modal">
         <button class="modal-btn"> 
-          <svg class="modal-btn-svg" width="24" height="24">
-            <use href="./images/btn-modal-1.svg"> 
+          <button data-modal-close class="modal-btn"> 
+          <svg class="modal-btn-svg" width="8" height="8">
+            <use href="./images/symbol-defs.svg#icon-btn-modal-1"> 
             </use>
           </svg>
         </button>
@@ -454,5 +455,6 @@
         </ul>
       </div>
     </footer>
+    <script src="./js/modal.js"></script>
   </body>
 </html>
